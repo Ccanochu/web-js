@@ -1,0 +1,26 @@
+body{    
+    transition: background-color 600ms;
+}
+.container{
+    padding: 40px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+#icon-theme{
+    cursor:pointer;
+}
+img{
+    width: 100%;
+    height: 400px;
+}
+footer{     
+    margin: 0px auto;
+    width: 84%;
+    padding: 40px;
+    margin-top: 30px;
+}
+article span{
+    font-style: italic;
+}
+article p{
+    text-align: justify;
+}
