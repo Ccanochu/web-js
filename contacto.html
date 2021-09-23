@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Web-js of JORGE CANO CHUQUI">        
+    <title>Web-js</title>
+
+    <!-- Styles -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>  
+    <link id="selector-theme" type="text/css" rel="stylesheet" href="css/light.css">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.0-rc.2/themes/smoothness/jquery-ui.css"></link>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.0-rc.2/jquery-ui.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-form-validator/2.3.26/jquery.form-validator.min.js"></script>
+    <script src="js/main.js"></script>
+</head>
+
+<body>
+    <div class="container mt-4">
+        <header>             
+            <nav class="navbar navbar-black">
+                <div class="container-fluid">                        
+                    <h1 id="titulo"class="animate__animated animate__pulse">Mi primer web</h1>
+                    <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Buscar..." aria-label="Search">
+                    <!-- <button class="btn btn-outline-success" type="submit">Buscar</button> -->
+                    <div id="icon-theme">
+                        <i data-feather="moon" id="change-to-dark"></i>
+                        <i data-feather="sun" display="none" id="change-to-light"></i>
+                    </div>
+                    
+                    </form>
+                </div>
+                <div class="container-fluid navbar-expand-lg">
+                    <a class="py-2" href="index.html" aria-label="Product">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="d-block mx-auto" role="img" viewBox="0 0 24 24"><title>Product</title><circle cx="12" cy="12" r="10"/><path d="M14.31 8l5.74 9.94M9.69 8h11.48M7.38 12l5.74-9.94M9.69 16L3.95 6.06M14.31 16H2.83m13.79-4l-5.74 9.94"/></svg>
+                        </a>
+                        <a class="py-2 d-none d-md-inline-block animate__animated animate__bounce animate__delay-1s" 
+                        href="index.html">Inicio</a>
+                        <a class="py-2 d-none d-md-inline-block" href="about.html">Sobre mí</a>
+                        <a class="py-2 d-none d-md-inline-block" href="reloj.html">Reloj</a>
+                        <a class="py-2 d-none d-md-inline-block" href="contacto.html">Contacto</a>
+                </div>
+            </nav>
+        </header>
+        <main role="main" id="articulos" class="mt-4">            
+            <div class="row">                
+                <div class="col-md-7 p-2">
+                    <div id="contacto" class="mt-1 p-4">
+                        <h2>Contacto</h2>             
+                    </div>                    
+                </div>
+                <div class="col-md-5 mt-4 p-2">
+                    <aside id="sidebar">
+                        <h4>Bienvenido a mi Web</h4>
+                        <img src="img/pp.jpg" alt="Foto de perfil">
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis culpa laboriosam quae reprehenderit architecto itaque,</p>
+                    </aside>
+                    <div class="card mt-4" id="form-control">
+                        <div class="card-body">
+                            <h4 id="title">Identifícate</h4>
+                            <form id="login-form">
+                            <div class="mb-2">
+                                <label for="name">Nombre</label>
+                                <input 
+                                    type="text" 
+                                    id="form_name" 
+                                    name="name"
+                                    class="form-control rounded-0"
+                                    placeholder="Digite su nombre">
+                            </div>
+                            <div class="mb-2">
+                                <label for="email">Correo</label>
+                                <input 
+                                    type="text" 
+                                    id="form-email" 
+                                    name="email"
+                                    class="form-control rounded-0"
+                                    autocomplete="off"
+                                    placeholder="Digite su correo">
+                            </div>
+                            <div class="mb-2">
+                                <label for="password">Contraseña</label>
+                                <input 
+                                    type="password" 
+                                    id="form-password" 
+                                    name="password"
+                                    class="form-control rounded-0"
+                                    placeholder="Digite su contraseña">
+                            </div>
+                            <input type="submit" value="Enviar" id="form-submit" class="btn btn-primary">
+                            </form>
+                        </div>
+                        </div>
+                    
+                </div>
+            </div>
+        </main>
+    </div>
+    <footer class="py-2">
+        Probando el curso de Javascript &copy;
+
+        <a class="animate__animated animate__pulse" href="#articulos"><i data-feather="arrow-up" id="arrow-up"></i></a>
+    </footer>
+    <script>
+        feather.replace()
+        </script>
+</body>
+</html>

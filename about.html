@@ -9,18 +9,16 @@
     <!-- Styles -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>  
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">    
     <link id="selector-theme" type="text/css" rel="stylesheet" href="css/light.css">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.0-rc.2/themes/smoothness/jquery-ui.css"></link>
     <link rel="stylesheet" type="text/css" href="css/style.css">
 
     <!-- Scripts -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.0-rc.2/jquery-ui.min.js"></script>
     <script src="https://unpkg.com/feather-icons"></script>
     <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/locale/es.min.js"></script>
     <script src="js/main.js"></script>
 </head>
 
@@ -29,7 +27,7 @@
         <header>             
             <nav class="navbar navbar-black">
                 <div class="container-fluid">                        
-                    <h1 class="animate__animated animate__pulse">Mi primer web</h1>
+                    <h1 id="titulo"class="animate__animated animate__pulse">Mi primer web</h1>
                     <form class="d-flex">
                     <input class="form-control me-2" type="search" placeholder="Buscar..." aria-label="Search">
                     <!-- <button class="btn btn-outline-success" type="submit">Buscar</button> -->
@@ -52,14 +50,23 @@
                 </div>
             </nav>
         </header>
-        <main role="main" id="articulos" class="mt-4">
-            <div class="slider">
-                <div><img src="img/hojas.jpg" alt="hojas" title="hojas"></div>
-                <div><img src="img/caracol.jpg" alt="caracol" title="caracol"></div>
-                </div>
-
-            <div class="row">
-                <div class="col-md-7 p-2" id="posts">
+        <main role="main" id="articulos" class="mt-4">            
+            <div class="row">                
+                <div class="col-md-7 p-2">
+                    <div id="about" class="mt-1 p-4">
+                        <h3>¿Quienes somos?</h3>
+                        <div>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis culpa laboriosam quae reprehenderit architecto itaque,</p>
+                        </div>
+                        <h3>Nuestros servicios</h3>
+                        <div>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis culpa laboriosam quae reprehenderit architecto itaque,</p>
+                        </div>
+                        <h3>Nuestros patrocinadores</h3>
+                        <div>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis culpa laboriosam quae reprehenderit architecto itaque,</p>
+                        </div>                    
+                    </div>                    
                 </div>
                 <div class="col-md-5 mt-4 p-2">
                     <aside id="sidebar">
