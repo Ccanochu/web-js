@@ -1,5 +1,6 @@
 body{    
     transition: background-color 600ms;
+    font-family: Verdana,Arial,sans-serif;
 }
 .container{
     padding: 40px;
@@ -23,4 +24,8 @@ article span{
 }
 article p{
     text-align: justify;
+}
+#contacto{
+    display: block;
+    width: 80%;
 }

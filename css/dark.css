@@ -30,3 +30,6 @@ article span{
     background: #1D1D1D;
     color:white;
 }
+span.help-block.form-error{
+    color:white;
+}

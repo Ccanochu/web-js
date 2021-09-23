@@ -54,6 +54,7 @@ jQuery(function(){
         $("#change-to-light").removeAttr("display")
         localStorage.setItem("dark","css/dark.css")
         $("input").addClass("bg-dark text-white")
+        $("#select-sex").addClass("bg-dark text-white")
 
     })
     $("#change-to-light").click(function(){
@@ -61,6 +62,7 @@ jQuery(function(){
         $(this).attr("display","none")
         $("#change-to-dark").removeAttr("display")
         $("input").removeClass("bg-dark text-white")
+        $("#select-sex").removeClass("bg-dark text-white")
         localStorage.clear()
     })
     if(localStorage.getItem("dark") === "css/dark.css"){
@@ -68,6 +70,7 @@ jQuery(function(){
         $("#change-to-dark").attr("display","none")
         $("#change-to-light").removeAttr("display")
         $("input").addClass("bg-dark text-white")
+        $("#select-sex").addClass("bg-dark text-white")
     }
     
     /* Autentificar */
@@ -103,7 +106,22 @@ jQuery(function(){
             $("#reloj").html(moment().format("hh:mm:ss")).css("fontSize","40px")
         },1000)
     }
-
+    
+    if(window.location.href.indexOf("contacto") >-1){
+        // $("form input[id='contact-date']").datepicker({
+        //     dateFormat: "dd-mm-yy"
+        // })
+        $("#contact-date").datepicker({
+            dateFormat: "dd-mm-yy"
+          });
+        $.validate({
+            lang:"es"
+        })
+        const contact = $("#contact-form")
+        contact.click(function(e){
+            e.preventDefault()        
+        })
+    }
 })
 
 

@@ -12,7 +12,7 @@
     <link id="selector-theme" type="text/css" rel="stylesheet" href="css/light.css">
     <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.0-rc.2/themes/smoothness/jquery-ui.css"></link>
     <link rel="stylesheet" type="text/css" href="css/style.css">
-
+    
     <!-- Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -55,7 +55,53 @@
             <div class="row">                
                 <div class="col-md-7 p-2">
                     <div id="contacto" class="mt-1 p-4">
-                        <h2>Contacto</h2>             
+                        <h2>Contacto</h2>     
+                        <form id="contact-form" autocomplete="off">
+                            <div class="mb-2">
+                                <label for="contact-name">Nombre</label>
+                                <input type="text"
+                                placeholder="Digite su nombre" 
+                                id="contact-name"
+                                class="form-control rounded-0"
+                                data-validation="alphanumeric"
+                                autofocus>
+                            </div>
+                            <div class="mb-2">
+                                <label for="select-sex">Sexo</label>
+                                <select class="form-select" aria-label="Default select example" id="select-sex"
+                                data-validation="required">
+                                    <option value="1">Hombre</option>
+                                    <option value="2">Mujer</option>
+                                  </select>
+                            </div>
+                            <div class="mb-2">
+                                <label for="contact-date">Fecha de nacimiento</label>
+                                <input type="text"
+                                placeholder="Digite su fecha" 
+                                id="contact-date"
+                                class="form-control rounded-0"
+                                data-validation="date"
+                                data-validation-format="dd-mm-yyyy">
+                            </div>
+                            <div class="mb-2">
+                                <label for="contact-age">Edad</label>
+                                <input type="number"
+                                placeholder="Digite su edad" 
+                                id="contact-age"
+                                class="form-control rounded-0"
+                                data-validation="number"
+                                >
+                            </div>
+                            <div class="mb-2">
+                                <label for="contact-name">Correo electronico</label>
+                                <input type="text"
+                                placeholder="Digite su email" 
+                                id="contact-email"
+                                class="form-control rounded-0"
+                                data-validation="email">
+                            </div>
+                            <input type="submit" value="Enviar" id="form-contact" class="btn btn-primary">
+                        </form>        
                     </div>                    
                 </div>
                 <div class="col-md-5 mt-4 p-2">
