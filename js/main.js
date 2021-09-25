@@ -117,10 +117,6 @@ jQuery(function(){
         $.validate({
             lang:"es"
         })
-        const contact = $("#contact-form")
-        contact.click(function(e){
-            e.preventDefault()        
-        })
     }
 })
 
