@@ -108,9 +108,6 @@ jQuery(function(){
     }
     
     if(window.location.href.indexOf("contacto") >-1){
-        // $("form input[id='contact-date']").datepicker({
-        //     dateFormat: "dd-mm-yy"
-        // })
         $("#contact-date").datepicker({
             dateFormat: "dd-mm-yy"
           });
