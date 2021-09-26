@@ -1,3 +1,3 @@
 # web-js
 ## Live Demo
-Miralo [aquí](https://ccanochu.github.io/web-js/index.html).
+Miralo<a href="https://ccanochu.github.io/web-js/index.html" target="_blank"> aquí.</a>
